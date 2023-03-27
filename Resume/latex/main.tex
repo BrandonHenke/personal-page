@@ -1,0 +1,186 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[margin=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+\usepackage{enumitem}
+
+% personal data
+\name{Brandon}{Henke}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \address{2299 Knob Hill Dr., Apt. 4, Okemos, MI, 48864}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1 (651) 315-6852}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{brandon.henke3@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/BrandonHenke}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with multiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-30pt}
+% \small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Education}
+
+% \vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+% \vspace{5pt}
+
+\begin{itemize}[label={}]
+
+\item \cventry{2020}{BSc. Physics}{University of Minnesota - Twin Cities}{Minneapolis, MN}{}{}
+\item \cventry{2020}{BSc. Mathematics}{University of Minnesota - Twin Cities}{Minneapolis, MN}{}{}
+
+\end{itemize}
+
+\section{Employment History}
+
+\vspace{6pt}
+
+\begin{itemize}[label={}]
+
+\item
+\cventry{July 2020--Present}{Graduate Assistant}{Michigan State University}{East Lansing, MI}{}{
+As a part of the acceptance into graduate school, I was hired to be either a teaching assistant or a research assistant.
+A breakdown of my assignment each semester is as follows:
+\begin{itemize}
+    \item Summer 2020 - Research Assistant under Dr. Huey-Wen Lin studying Lattice QCD.
+    \item Fall 2020 - Teaching Assistant for PHY251.
+    \item Spring 2021 - Teaching Assistant for PHY252.
+    \item Summer 2021 - Teaching Assistant for PHY251 and PHY252.
+    \item Fall 2021 - Research Assistant under Dr. Huey-Wen Lin studying Lattice QCD.
+    \item Spring 2022 - Research Assistant under Dr. Huey-Wen Lin studying Lattice QCD.
+    \item Summer 2022 - Research Assistant under Dr. Huey-Wen Lin studying Lattice QCD.
+    \item Fall 2022 - Teaching Assistant for PHY251.
+    \item Spring 2023 - Teaching Assistant (course unknown at this time).
+\end{itemize}
+}
+
+\item
+\cventry{June 2017--May 2020}{Technical Aide}{3M}{Maplewood, MN}{}{
+I was a lab assistant, responsible for making and testing samples for the different projects that were worked on.
+}
+
+% \vspace{6pt}
+
+\item
+\cventry{September 2018--December 2019}{Teaching Assistant}{University of Minnesota - Twin Cities}{}{}{
+I was a teaching assistant for introductory physics courses. I was responsible for running a lab and problem session.
+Grading, holding office hours, tutoring, and proctoring exams were all part of the duties outside of instructing the lab and problem sessions.
+}
+
+% \vspace{6pt}
+
+\item
+\cventry{September 2016--May 2017}{Teaching Assistant}{University of Minnesota - Duluth}{}{}{
+I was a teaching assistant for introductory physics and math courses. I was responsible for assisting students during problem sessions, grading, and tutoring.
+}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+% \vspace{6pt}
+
+\begin{itemize}[label={}]
+
+\item \textbf{Programming Languages:} Proficient in: C++, Python, Matlab, Java, TeX
+
+\item \textbf{Industry Software Skills:} Matlab (Advanced), Mathematica (Advanced),  MS/Google Office Products (Advanced)
+
+\item \textbf{Tutoring:} I am a nationally certified tutor in introductory physics and math courses.
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+% \vspace{6pt}
+
+\begin{itemize}[label={}]
+
+\item \textbf{General Programming:}
+I like to program other projects, some of which can be found on my github.
+Most of these center around physics and math applications.
+
+\item \textbf{Video Game Modding:}
+With the help of a friend, I've created a mod for minecraft that generates a maze using a loop-erased random walk algorithm.
+
+\item \textbf{Other:}
+I like to learn foreign languages and linguistics. I am not at a speaking level for any language besides English, but I've learned some basics of French, Italian, Latin, Spanish, Greek (very basic), and Japanese (rusty).
+
+\end{itemize}
+
+% \section{References}
+
+% \vspace{6pt}
+ 
+% \begin{itemize}
+
+% \item{Up to 4 references available on request}
+
+% \end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
