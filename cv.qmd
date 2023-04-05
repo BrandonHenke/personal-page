@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-#### [Home](home.md) [Curriculum Vitae](cv.md)
+#### [Home](home.qmd) [Curriculum Vitae](cv.md)
 
 ###### [Download my Curriculum Vitae](Resume/curriculum-vitae.pdf)
 
